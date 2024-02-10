@@ -1,4 +1,4 @@
-import { OrganizationSwitcher, SignOutButton, SignedIn } from "@clerk/nextjs";
+import { OrganizationSwitcher, SignOutButton, SignedIn, UserButton } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,6 +27,7 @@ const Topbar = () =>{
                         organizationSwitcherTrigger:"py-2 px-4"
                     }
                 }}/>
+                <UserButton afterSignOutUrl="/"/>
             </div>
         </nav>
     )

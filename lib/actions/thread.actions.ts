@@ -40,7 +40,7 @@ export const fetchPosts = async(pageNumber=1, pageSize=20) => {
         connectToDB();
 
         let skipAmount = (pageNumber-1)*pageSize;
-        const postsQuery = Thread.find({parentId:{$in:[null,undefined]}}).sort({createAt:'desc'}).skip(skipAmount).limit(pageSize).populate({path:'author',model:User}).populate({
+        const postsQuery = Thread.find({parentId:{$in:[null,undefined]}}).sort({createdAt:"desc"}).skip(skipAmount).limit(pageSize).populate({path:'author',model:User}).populate({
             path:'children',
             populate:{
                 path:'author',
