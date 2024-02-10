@@ -12,8 +12,8 @@ Friends is a modern, thread-based community platform built with Next.js, Tailwin
   
 # Technologies:
 
-### Front-end: Next.js, Tailwind CSS, TypeScript
-### Authentication: Clerk
-### File Storage: UploadThing
-### Database: (Choose the preferred DB - e.g., MongoDB, PostgreSQL)
-### Other: TypeScript, ESLint, Prettier, Husky
+- Front-end: Next.js, Tailwind CSS, TypeScript
+- Authentication: Clerk
+- File Storage: UploadThing
+- Database: MongoDB
+- Other: TypeScript, ESLint, Prettier
