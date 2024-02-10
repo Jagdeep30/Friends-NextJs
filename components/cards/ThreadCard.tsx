@@ -64,16 +64,16 @@ const ThreadCard = ({
                         </div>
                     </div>
                 </div>
+                </div>
                 {!isComment && community && (
                     <Link className="mt-5 flex items-center" href={`/communities/${community.id}`}>
                         <p className="text-subtle-medium text-gray-1">
-                            {formatDateString(createdAt)}
+                            {formatDateString(createdAt)}{" "}
                             - {community.name} Community
                         </p>
                         <Image src={community.image} alt={community.name} height={14} width={14} className="rounded-full object-cover ml-1"/>
                     </Link>
                 )}
-            </div>
         </article>
     )
 }

@@ -39,7 +39,7 @@ const PostThread = ({userId}:{userId:string}) => {
 
     const onSubmit = async(values : z.infer<typeof ThreadValidation>) => 
     {
-        console.log("OrgId :",organization);
+        // console.log("OrgId :",organization);
         
         await createThread({
             text:values.thread,
